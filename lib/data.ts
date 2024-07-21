@@ -2,9 +2,15 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import enjoytelevisionImg from "@/public/enjoytelevision.png";
+import digitalcashImg from "@/public/digitalcash.png";
+import handymanImg from "@/public/handyman.png";
+import lightspeedliftImg from "@/public/lightspeedlift.png";
+import yokuImg from "@/public/yoku.png";
+import fezaappImg from "@/public/fezaapp.png";
+import { FiverIcon, UpworkIcon, XgridIcon } from "@/components/icons";
+// import fezaappImg from "@/public/fezaapp.png";
+
 
 export const links = [
   {
@@ -35,73 +41,124 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Software Engineering ",
+    location: "UET Taxila",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "I graduated with a degree in Software Engineering. I learned the basics of programming, algorithms, data structures, databases, and software engineering principles.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "2020",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Fiver Freelancer",
+    location: "Islamabad, Pakistan",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+      "I started my career as a freelancer on Fiverr. I worked on various projects, including web development, mobile app development, and automation scripts.",
+    icon: React.createElement(FiverIcon),
+    date: "2020 - 2021",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Software Engineer",
+    location: "Xgrid Inc. Islamabad, Pakistan",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+      "I worked as a software engineer at Xgrid Inc. I developed mobile applications using Flutter and React Native. I also worked on backend development using Node.js, AWS, CI/CD, lambda functions, and serverless architecture.",
+    icon: React.createElement(XgridIcon),
+    date: "2021 - 2023",
+  },  {
+    title: "Experienced Software Engineer",
+    location: "Upwork ",
+    description:
+      "I am working as a software engineer at Upwork. I developed mobile applications using Flutter and React Native. I am offering my services to clients all over the world and providing them with high-quality software solutions.",
+    icon: React.createElement ( UpworkIcon),
+    date: "2024 - Present",
   },
+
 ] as const;
 
 export const projectsData = [
+  
   {
-    title: "CorpComment",
+    title: "Digital Cash by Neosurf",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "Seamless Transactions for Gamers | Effortlessly manage and convert your cash into digital currencies for all your gaming needs.",
+    tags: ["Flutter", "REST APIs", "Payment Integration", "AWS"],
+    imageUrl: digitalcashImg,
+  },{
+    title: "Enjoy Television",
+    description:
+      "A Movie and TV show tracker. It has features like searching, filtering, sorting and pagination for movies and TV shows.",
+      
+      
+    tags: ["Flutter", "Wordpress", "FluidStream", "Firebase", "Firebase Notification"],
+    imageUrl: enjoytelevisionImg,
   },
   {
-    title: "rmtDev",
+    title: "Chamo’s Handyman app",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
-  },
-  {
-    title: "Word Analytics",
+      "A versatile platform designed to streamline the process of booking and managing home maintenance and repair services. Built using the Flutter framework, this app offers a seamless experience for users across iOS and Android devices.",
+    tags: ["Flutter", "Firebase", ,"Google Maps", "Wordpress","Stripe" ,"FCM"],
+    imageUrl: handymanImg,
+  },{
+    title: "YOKU - Quit Vaping Tracker",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "An app designed to assist individuals in quitting smoking and managing nicotine consumption. The app offers a range of features, including tracking daily nicotine intake, setting goals, and monitoring progress.",
+    tags: ["Hybrid mobile app", "SQL", "Local Storage", "NOtifications", "Graphs"],
+    imageUrl: yokuImg,
+  },{
+    title: "Ventigo - Salon Management",
+    description:
+      "A comprehensive salon management app designed to streamline the process of managing appointments, tracking customer data, and monitoring sales. The app offers a range of features, including appointment scheduling, customer profiles, and sales reports.",
+    tags: ["Flutter", "Local Storage","auth", "Drift","SQLite"],
+    imageUrl: yokuImg,
+  },{
+    title: "FEZA - Online Shopping",
+    description:
+      "The perfect online marketplace to buy and sell. Here you’ll find a wide selection of new and used products, including vintage clothes, antique furniture, used books, retro games, electronics, pre-owned cars, and studios for rent. Also, an extensive listing of services and jobs. It’s safe and easy.",
+    tags: ["Flutter", "Local Storage","auth", "Drift","SQLite"],
+    imageUrl: fezaappImg,
+  },{
+    title: "LightSpeed Lift encounter your body weight",
+    description:
+      "LightSpeed Lift is a fitness app that helps users track their body weight and monitor their progress over time. The app offers a range of features, including tracking daily weight, setting goals, and monitoring progress.",
+    tags: ["Flutter",  "Google Fit","SQLite","Calculus"],
+    imageUrl: lightspeedliftImg,
   },
 ] as const;
 
 export const skillsData = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Node.js",
-  "Git",
-  "Tailwind",
-  "Prisma",
-  "MongoDB",
-  "Redux",
+"Flutter",
+  "Dart",
+  "Firebase",
+  "RESTful APIs",
   "GraphQL",
-  "Apollo",
+  "Provider",
+  "Riverpod",
+  "BLoC",
+  "SQLite",
+  "Hive",
+  "Realm",
+  "Firebase Cloud Functions",
+  "Node.js",
   "Express",
+  "GraphQL APIs",
   "PostgreSQL",
-  "Python",
-  "Django",
-  "Framer Motion",
+  "MySQL",
+  "MongoDB",
+  "REST APIs",
+  "OAuth",
+  "JWT",
+  "CI/CD",
+  "Docker",
+  "AWS",
+  "Azure",
+  "Firebase Authentication",
+  "Firebase Firestore",
+  "Firebase Realtime Database",
+  "Firebase Cloud Messaging",
+  "Firebase Analytics",
+  "Redux",
+  "RESTful API Integration",
+  "Serverless Architecture",
+  "Backend as a Service (BaaS)",
+  "Payment Gateways Integration",
+  "WebSockets",
 ] as const;
